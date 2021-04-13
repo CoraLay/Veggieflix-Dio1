@@ -186,24 +186,17 @@ div h4{
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     header nav a{
         margin-right: 0;
         padding: 5px;
     }
 
     #sendYours div{
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-    
-        margin: 20px;
-    
-        font-size: 1.2em;
-    }
-    
-
+        align-items: center;    
+    }  
 }
 
 @media screen and (min-width: 1000px){
