@@ -14,7 +14,7 @@
 body{
     background-color: var(--blackColor);
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(72, 255, 0);
+    color: rgb(255, 255, 255);
 }
 
 header .container{
@@ -46,7 +46,7 @@ header nav a:hover{
 .filmePrincipal {
     font-size: 16px;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)100%), url('/img/pie.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)100%), url('../img/pie.jpg');
 
     height: 400px;
     background-size: cover;
