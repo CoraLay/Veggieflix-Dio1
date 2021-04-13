@@ -1,0 +1,154 @@
+:root{
+    --color1: #00c23a;
+    --blackColor: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background-color: var(--blackColor);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(72, 255, 0);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+header .logo{
+    color: var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(219, 217, 217);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*filme principal*/
+
+.filmePrincipal {
+    font-size: 16px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)100%), url('/img/pie.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    text-shadow: 4px 4px px rgba(0, 0, 0, 0.85);
+
+    transition: 0.9s ease all;
+}
+
+.filmePrincipal:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)100%), url('/img/pie.jpg');
+    background-size: cover;
+
+}
+
+.filmePrincipal .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filmePrincipal .titleh3{
+    margin-top: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;    
+}
+
+
+
+.button{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 18px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.4s ease all;
+  
+}
+
+.button i{
+    margin-right: 10px;
+}
+
+.button:hover{
+    background-color: rgba(248, 248, 248, 0.80);
+    color: var(--blackColor);
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filmePrincipal .container{
+    width: 70%;
+}
+
+
+/* carousel */
+
+.boxFilm{
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 85%;
+}
+
+.boxFilm:hover{
+    opacity: 100%;
+}
+
+.carouselFilms{
+    margin-top: 5px;
+}
+
+
+
+/* responsividade */
+
+@media screen and (max-width:700px) {
+    header .container{
+        display: flex;
+        flex-flow: column wrap;        
+    }
+
+    .button{
+        margin-top: 5px;
+        width: 130px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .description{
+        width: 50%;
+    }
+}
