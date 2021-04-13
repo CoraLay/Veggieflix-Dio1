@@ -72,7 +72,6 @@ header nav a:hover{
 }
 
 .filmePrincipal .titleh3{
-    margin-top: 10%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;    
 }
@@ -145,9 +144,9 @@ div input,textarea{
 
 /* carousel */
 
-div h3{
+div h4{
     font-size: 29px;
-    pad: 10px;
+    padding: 10px;
     margin: 0px 0px 5px 30px;
 }
 
