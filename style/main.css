@@ -24,9 +24,6 @@ header .container{
 }
 
 header .logo{
-    color: var(--color1);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
     margin-left: 5px;
     margin-top: 5px;
 }
@@ -35,11 +32,13 @@ header nav a{
     text-decoration: none;
     color: rgb(219, 217, 217);
     margin-right: 10px;
+    padding: 10px;
 }
 
 header nav a:hover{
     color: rgb(255, 255, 254);
 }
+
 
 /*filme principal*/
 
@@ -48,7 +47,7 @@ header nav a:hover{
 
     background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)100%), url('../img/pie.jpg');
 
-    height: 400px;
+    height: 700px;
     background-size: cover;
 
     display: flex;
@@ -69,7 +68,7 @@ header nav a:hover{
 
 .filmePrincipal .description{
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .filmePrincipal .titleh3{
@@ -81,18 +80,19 @@ header nav a:hover{
 
 
 .button{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.50);
     color: white;
     border: none;
     border-radius: 3px;
 
-    padding: 10px 18px;
+    padding: 15px 20px;
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 14px;
+
+    font-weight: 700;
 
     cursor: pointer;
-    transition: 0.4s ease all;
-  
+    transition: 0.4s ease all;  
 }
 
 .button i{
@@ -100,9 +100,20 @@ header nav a:hover{
 }
 
 .button:hover{
-    background-color: rgba(248, 248, 248, 0.80);
+    background-color: rgba(0, 0, 0, 0.30);
+    color: white;
+}
+
+
+.button:first-of-type{
+    background-color: rgba(255, 250, 240, 0.85);
     color: var(--blackColor);
 }
+
+.button:first-of-type:hover{
+    background-color: rgba(255, 250, 240, 0.63);
+}
+
 
 .container{
     margin-left: 20px;
@@ -112,8 +123,37 @@ header nav a:hover{
     width: 70%;
 }
 
+#sendYours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sendYours div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+
+    font-size: 1.2em;
+}
+
+div input,textarea{
+    padding: 7px;
+}
 
 /* carousel */
+
+div h3{
+    font-size: 29px;
+    pad: 10px;
+    margin: 0px 0px 5px 30px;
+}
+
+.doces{
+    margin-top: 30px;
+}
 
 .boxFilm{
     width: 100%;
@@ -144,6 +184,13 @@ header nav a:hover{
         margin-top: 5px;
         width: 130px;
         font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header nav a{
+        margin-right: 0;
+        padding: 5px;
     }
 }
 

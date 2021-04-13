@@ -16,16 +16,16 @@
     <header>        
         <div class="container">
             <img class="logo" src="img/logo.png"></img>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Dicas</a>
-                <a href="#">Receitas</a>
-                <a href="#">Muito mais</a>
+            <nav id="filmePrincipal">
+                <a href="#filmePrincipal">Início</a>
+                <a href="#desserts">Doces</a>
+                <a href="#salty">Salgados</a>
+                <a href="#sendYours">Envie sua receita</a>
             </nav>
         </div>
     </header>
     <main>
-        <div class="filmePrincipal">
+        <div class="filmePrincipal" >
             <div class="container">
                 <h3 class="titleh3">
                     TORTA DE LEGUMES
@@ -44,50 +44,98 @@
             </div>          
         </div>
         <div>
-            <div class="carouselFilms">
+            <div class="carouselFilms" id="desserts">
+                <h3 class="doces">Sobremesas</h3>
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <img class="boxFilm" src="img/min01.png" alt="">
+                        <img class="boxFilm" src="img/min01.png" alt="deliciosa sobremesa">
                     </div>
                     <div class="item">
-                        <img class="boxFilm" src="img/min02.png" alt="">
-                    </div>  
-   
+                        <img class="boxFilm" src="img/min02.png" alt=deliciosa sobremesa">
+                    </div>   
                     <div class="item">
-                        <img class="boxFilm" src="img/min04.png" alt="">
+                        <img class="boxFilm" src="img/min04.png" alt="deliciosa sobremesa">
                     </div>    
                     <div class="item">
-                        <img class="boxFilm" src="img/min05.png" alt="">
+                        <img class="boxFilm" src="img/min05.png" alt="deliciosa sobremesa">
                     </div>    
                     <div class="item">
-                        <img class="boxFilm" src="img/min06.png" alt="">
+                        <img class="boxFilm" src="img/min06.png" alt="deliciosa sobremesa">
                     </div>    
                     <div class="item">
-                        <img class="boxFilm" src="img/min07.png" alt="">
+                        <img class="boxFilm" src="img/min07.png" alt="deliciosa sobremesa">
                     </div>    
                     <div class="item">
-                        <img class="boxFilm" src="img/min08.png" alt="">
+                        <img class="boxFilm" src="img/min08.png" alt="deliciosa sobremesa">
                     </div>    
                     <div class="item">
-                        <img class="boxFilm" src="img/min09.png" alt="">
+                        <img class="boxFilm" src="img/min09.png" alt="deliciosa sobremesa">
                     </div>    
                     <div class="item">
-                        <img class="boxFilm" src="img/min10.png" alt="">
+                        <img class="boxFilm" src="img/min10.png" alt="deliciosa sobremesa">
                     </div>    
                     <div class="item">
-                        <img class="boxFilm" src="img/min11.png" alt="">
+                        <img class="boxFilm" src="img/min11.png" alt="deliciosa sobremesa">
                     </div>    
                     <div class="item">
-                        <img class="boxFilm" src="img/min12.png" alt="">
-                    </div>    
-                    
-                    
-                    
-                    
-                    
-                    
+                        <img class="boxFilm" src="img/min12.png" alt="deliciosa sobremesa">
+                    </div>                                      
+                </div>                
+            </div>
+            <div class="carouselFilms" id="salty">
+                <h3 class="salgados">Pratos salgados</h3>
+                <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img class="boxFilm" src="img/min13.png" alt="delicioso prato salgado">
+                        </div>
+                        <div class="item">
+                            <img class="boxFilm" src="img/min14.png" alt="delicioso prato salgado">
+                        </div>           
+                        <div class="item">
+                            <img class="boxFilm" src="img/min15.png" alt="delicioso prato salgado">
+                        </div>    
+                        <div class="item">
+                            <img class="boxFilm" src="img/min16.png" alt="delicioso prato salgado">
+                        </div>    
+                        <div class="item">
+                            <img class="boxFilm" src="img/min17.png" alt="delicioso prato salgado">
+                        </div>    
+                        <div class="item">
+                            <img class="boxFilm" src="img/min18.png" alt="delicioso prato salgado">
+                        </div>    
+                        <div class="item">
+                            <img class="boxFilm" src="img/min19.png" alt="delicioso prato salgado">
+                        </div>    
+                        <div class="item">
+                            <img class="boxFilm" src="img/min20.png" alt="delicioso prato salgado">
+                        </div>    
+                        <div class="item">
+                            <img class="boxFilm" src="img/min21.png" alt="delicioso prato salgado">
+                        </div>    
+                        <div class="item">
+                            <img class="boxFilm" src="img/min22.png" alt="delicioso prato salgado">
+                        </div>    
+                        <div class="item">
+                            <img class="boxFilm" src="img/min23.png" alt="delicioso prato salgado">
+                        </div>
                 </div>
             </div>
+        </div>
+        <div id="sendYours">
+            <div>
+                <h3>Envie a sua receita</h3>
+            </div>
+            <div>
+                <label for="name">Seu nome completo:</label>
+            <input type="text" placeholder="Nome completo" id="name">
+            </div>
+            <div>
+                <label for="recipe">Sua receita:</label>
+            <textarea name="recipe" id="recipe" cols="50" rows="10" placeholder="Descreva o passo a passo da sua receita aqui"></textarea>
+            </div>  
+            <div>
+                <button class="button">Enviar</button>
+            </div>          
         </div>
     </main>
     <script src="https://kit.fontawesome.com/9f1c35244a.js" crossorigin="anonymous"></script>
